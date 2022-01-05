@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+
+String.prototype.tekrarla = function(count) {
+let new_str='';
+
+  for (let i = 1; i <= count; i++) {
+    new_str+=this;
+  }
+  
+  return new_str;
+};
+
+document.getElementById("demo").innerHTML = "Salam".tekrarla(3);
+</script>
+
+</body>
+</html>
